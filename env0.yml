@@ -5,7 +5,7 @@ deploy:
     setupVariables:
       after: &login-k8s
         - aws sts get-caller-identity
-        - aws eks update-kubeconfig --cluster-name geoff-eks-test --region us-west-2
+        - aws eks update-kubeconfig --name geoff-eks-test --region us-west-2
 
 destroy:
   steps:
